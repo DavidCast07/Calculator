@@ -3,42 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="style.css">
-    <script src="main.js"></script>
+    
     <title>Calculator</title>
 </head>
 <body>
+   <div class="calculator">
     <div class="container">
-        <input type="text" class="display" />
+        <input  type="text" placeholder="0" id="inputBox" />
+        <div>
+             <button class="other-clr">AC</button>
+             <button class="other-clr">DE</button>
+             <button class="main">%</button>
+             <button class="main">/</button>
+        </div>
 
-          <div class="buttons">
+        <div>
+          <button>7</button>
+          <button>8</button>
+          <button>9</button>
+          <button class="main">*</button>
+        </div>
 
-            <button class="operator" data-value="AC">AC</button>
-            <button class="operator" data-value="DEL">DEL</button>
-            <button class="operator" data-value="%">%</button>
-            <button class="operator" data-value="/">/</button>
+        <div>
+          <button>4</button>
+          <button>5</button>
+          <button>6</button>
+          <button class="main">-</button>
+        </div>
 
-            <button data-value="7">7</button>
-            <button data-value="8">8</button>
-            <button data-value="9">9</button>
-            <button class="operator" data-value="*">*</button>
+        <div>
+          <button>1</button>
+          <button>2</button>
+          <button>3</button>
+          <button class="main">+</button>
+         </div>
 
-            <button data-value="4">4</button>
-            <button data-value="5">5</button>
-            <button data-value="6">6</button>
-            <button class="operator" data-value="-">-</button>
+        <div>
+          <button>0</button>
+          <button>.</button>
+          <button class="equal" >=</button>
+        </div> 
+    </div>
+   </div>  
 
-            <button data-value="1">1</button>
-            <button data-value="2">2</button>                    
-            <button data-value="3">3</button>
-            <button class="operator" data-value="+">+</button>
-
-            <button data-value="0">0</button>
-            <button data-value="00">00</button>
-            <button data-value=".">.</button>
-            <button class="operator" data-value="=">=</button>
-
-
-          </div>
-    </div>  
+   <script src="main.js"></script>
 </body>
 </html>
